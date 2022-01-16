@@ -4,46 +4,56 @@ let op = "";
 let answer = 0;
 
 function insNum(x){
+    
     op === "" ? num1 += "" + x : num2 += "" + x;
-console.log("num1: " + num1);
-console.log("num2: " + num2);
+    document.getElementById("display").innerHTML = num1 + op + num2;
+
 }
 
 function insOp(y){
     num1 === "" ? console.log("Num1 needs to be set first!") : op === "" ? op = y : calculate(y);;
-    
-    console.log(op);
+    document.getElementById("display").innerHTML = num1 + op + num2;
 
 }
 
 function calculate(){
     switch (op) {
-        case "plus":
+        case "+":
+            if(num2 == ""){ break; }
             answer = parseFloat(num1) + parseFloat(num2);
-            num1 = answer;
-            num2 = 0;
-            document.getElementsByClassName("display")
+            num1 = String(answer);
+            num2 = String("");
+            document.getElementById("display").innerHTML = answer;
             break;
-        case "minus":
+        case "-":
+            if(num2 == ""){ break; }
             answer = parseFloat(num1) - parseFloat(num2);
-            num1 = answer;
-            num2 = 0;
+            num1 = String(answer);
+            num2 = String("");
+            document.getElementById("display").innerHTML = answer;
             break;
-        case "divide":
-            if(num2 == 0){ alert("Do Not Divide By 0!"); break; }
+        case "/":
+            if(num2 == ""){ break; }
+            if(num2 == 0){ alert("Do Not Divide By 0!"); doClear(); break; }
             answer = parseFloat(num1) / parseFloat(num2);
-            num1 = answer;
-            num2 = 0;
+            num1 = String(answer);
+            num2 = String("");
+            document.getElementById("display").innerHTML = answer;
             break;
-        case "multiply":
+        case "X":
+            if(num2 == ""){ break; }
             answer = parseFloat(num1) * parseFloat(num2);
-            num1 = answer;
-            num2 = "";
+            num1 = String(answer);
+            num2 = String("");
+            document.getElementById("display").innerHTML = answer;
             break;
+        
         default:
+            console.log("default ran");
             break;
     }
-    document.getElementsByClassName("display").innerHTML = answer;
+    
+    
     
 }
 function addPeriod() {
@@ -55,5 +65,5 @@ function doClear() {
     num2 = "";
     op = "";
     answer = 0;
-    console.log("num1: " + num1 + " num2: " + num2 + " op: " + op + " answer: " + answer); 
+    document.getElementById("display").innerHTML = answer;
 }
