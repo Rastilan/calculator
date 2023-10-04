@@ -16,8 +16,12 @@
     border-width:1px;
     font-size: 8em;
 }
+
 .display{
  grid-column: 1/5;
+}
+.display button {
+    font-size: 8em;
 }
 .clear{
 
