@@ -8,13 +8,10 @@ A simple Javascript project back when I was learning. Nothing too complex.
 
 # Usage
 
-[(Back to top)](#table-of-contents)
 
 Its just a simple website calculator.
 
-# License
+You can test it here!
+https://rastilan.github.io/calculator/
 
-[(Back to top)](#table-of-contents)
 
-
-The MIT License (MIT) 2017 - [Athitya Kumar](https://github.com/athityakumar/). Please have a look at the [LICENSE.md](LICENSE.md) for more details.
