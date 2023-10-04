@@ -11,7 +11,7 @@ function insNum(x){
 }
 
 function insOp(y){
-    num1 === "" ? console.log("Num1 needs to be set first!") : op === "" ? op = y : calculate(y);;
+    num1 === "" ? console.log("Num1 needs to be set first!") : op === "" ? op = y : calculate(y);
     document.getElementById("display").innerHTML = num1 + op + num2;
 
 }

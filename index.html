@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>
+            <button onclick="doClear()" class="clear">Clear</button>
+            <button class="backspace">Backspace</button>
+            <button onclick="insNum(9)" class="num 9">9</button>
+            <button onclick="insNum(8)" class="num 8">8</button>
+            <button onclick="insNum(7)" class="num 7">7</button>
+            <button onclick="insOp('/')" class="buttonide">/</button>
+            <button onclick="insNum(6)" class="num 6">6</button>
+            <button onclick="insNum(5)" class="num 5">5</button>
+            <button onclick="insNum(4)" class="num 4">4</button>
+            <button onclick="insOp('X')" class="multiply">X</button>
+            <button onclick="insNum(3)" class="num 3">3</button>
+            <button onclick="insNum(2)" class="num 2">2</button>
+            <button onclick="insNum(1)" class="num 1">1</button>
+            <button onclick="insOp('-')" class="minus">-</button>
+            <button onclick="addPeriod()" class="period">.</button>
+            <button onclick="insNum(0)" class="num 0">0</button>
+            <button onclick="calculate('=')" class="equal">=</button>
+            <button onclick="insOp('+')" class="plus">+</button>
+    </div>
+</body>
+</html>
